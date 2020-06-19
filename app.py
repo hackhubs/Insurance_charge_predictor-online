@@ -13,7 +13,7 @@ def predict(model, input_df):
 def run():
 
     from PIL import Image
-    image = Image.open('logo.png')
+     image = Image.open('logo.png')
     image_hospital = Image.open('hospital.jpg')
 
     st.image(image,use_column_width=False)
@@ -22,8 +22,8 @@ def run():
     "How would you like to predict?",
     ("Online", "Batch"))
 
-    st.sidebar.info('This app is created to predict patient hospital charges')
-    st.sidebar.success('https://www.pycaret.org')
+    st.sidebar.info('This app is created to predict patient hospital charges at different places in country')
+   
     
     st.sidebar.image(image_hospital)
 
@@ -48,7 +48,7 @@ def run():
 
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
-            output = '$' + str(output)
+            output = '₨' + str(output)
 
         st.success('The output is {}'.format(output))
 
