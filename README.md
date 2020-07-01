@@ -1,6 +1,6 @@
 # Build and deploy machine learning web app using PyCaret and Streamlit#
 
-# Step to run the projecy
+# Step to run the project
 
 1. Download the repository
 2 create a virtual environment:- pythom -m venv venv  then write venv\Scripts\activate
